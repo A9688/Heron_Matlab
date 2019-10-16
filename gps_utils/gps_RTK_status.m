@@ -17,7 +17,7 @@ RTK = cellfun(@(m) double(m.Status.Status),msgStructs);  % RTK-GPS Status
 % create a new figure and plot according to 'disp_type'
 figure;
 plot(RTK);
-ylim([-2,2]);
+ylim([-3,2]);
 
 end
 

@@ -21,7 +21,7 @@ La = cellfun(@(m) double(m.Latitude),msgStructs); % latitude (n,1)
 if disp_type == "degree"
     % display the plot
     figure();
-    plot(Lo,La,'.')
+    scatter(Lo, La, '.')
     xlabel('Longitude (deg)');
     ylabel('Latitude (deg)');
     title('Latitude & Longitude in degree');
@@ -36,7 +36,7 @@ if disp_type == "meter"
     La_m = (La - min(La)) * la_meter;
     % display the plot
     figure();
-    plot(Lo_m,La_m,'.')
+    scatter(Lo_m, La_m, '.')
     xlabel('Longitude (meter)');
     ylabel('Latitude (meter)');
     title('Latitude & Longitude in meter');
